@@ -33,7 +33,7 @@ ul {
   left: -1.65rem;
   right: -0.475rem;
   bottom: -0.25rem;
-  padding: 0.3rem 0.3rem 0.7rem;
+  padding: 0.3rem 0.3rem 0.6rem;
 }
 .panel h3 {
   font-size: 0.25rem;
@@ -59,6 +59,10 @@ ul {
   /* 点位区域 */
   /* 地图 */
   /* 用户统计 */
+  /* 订单 */
+  /* 销售 */
+  /* 渠道 季度 */
+  /* 排行 */
 }
 .viewport > .column > .overview {
   height: 1.25rem;
@@ -287,6 +291,207 @@ ul {
   box-sizing: border-box;
   background-image: url(../img/rect.png);
   background-size: cover;
+}
+.viewport > .column > .order {
+  height: 0.7rem;
+}
+.viewport > .column > .order > .inner h4 {
+  /* margin-bottom: 0.15rem; */
+  font-size: 0.25rem;
+  color: #fff;
+}
+.viewport > .column > .order > .inner span {
+  display: block;
+  color: #4cfde2;
+  font-size: 0.175rem;
+}
+.viewport > .column > .order > .inner span > .line {
+  display: inline-block;
+  border-radius: 5px;
+  width: 4px;
+  height: 10px;
+  background-color: #2d6af6;
+  margin-right: 2px;
+}
+.viewport > .column > .order > .inner > .days {
+  display: flex;
+}
+.viewport > .column > .order > .inner > .days > a {
+  display: block;
+  font-size: 0.2rem;
+  padding-right: 0.225rem;
+  padding-left: 0.225rem;
+  line-height: 1;
+  color: #1950c4;
+  border-right: 0.025rem solid #00f2f1;
+}
+.viewport > .column > .order > .inner > .days .active {
+  color: #fff;
+  font-size: 0.225rem;
+}
+.viewport > .column > .order > .inner > .days > a:nth-of-type(4) {
+  border-right: none;
+  padding-right: 0;
+}
+.viewport > .column > .order > .inner > .days > a:nth-of-type(1) {
+  padding-left: 0;
+}
+.viewport > .column > .order > .inner > .orderdatas > div {
+  flex: 1;
+  margin-top: 0.125rem;
+}
+.viewport > .column > .order > .inner .data {
+  display: flex;
+}
+.viewport > .column > .order > .inner .datanone {
+  display: none !important;
+}
+.viewport > .column > .sell {
+  height: 1.8rem;
+  position: relative;
+}
+.viewport > .column > .sell > .inner {
+  /* 单位 */
+  /* 销售折线图 */
+}
+.viewport > .column > .sell > .inner h4 {
+  /* margin-bottom: 0.15rem; */
+  font-size: 0.25rem;
+  color: #fff;
+  padding-right: 0.225rem;
+  border-right: 0.025rem solid #00f2f1;
+}
+.viewport > .column > .sell > .inner > .selltotal {
+  display: flex;
+  line-height: 1;
+}
+.viewport > .column > .sell > .inner > .selltotal > a {
+  padding: 0.05rem;
+  font-size: 0.175rem;
+  color: #0bace6;
+  margin-left: 0.125rem;
+  border-radius: 0.0375rem;
+}
+.viewport > .column > .sell > .inner > .selltotal .ac {
+  background-color: #4c9bfd;
+  color: #fff;
+}
+.viewport > .column > .sell > .inner > .unit {
+  position: absolute;
+  top: 0.775rem;
+  left: 0.675rem;
+  font-size: 0.15rem;
+  color: #0bace6;
+}
+.viewport > .column > .sell > .inner > .sline {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.0625rem;
+}
+.viewport > .column > .warp {
+  display: flex;
+  width: 100%;
+  height: 2.6rem;
+  /* 渠道 */
+  /* 季度 */
+}
+.viewport > .column > .warp > .channel > .inner > h3 {
+  font-size: 0.2rem;
+}
+.viewport > .column > .warp > .channel > .inner > .data {
+  width: 100%;
+}
+.viewport > .column > .warp > .channel > .inner > .data > .radar {
+  width: 100%;
+  height: 1.6rem;
+}
+.viewport > .column > .warp > .quarter {
+  width: 30%;
+  margin-left: 10px;
+}
+.viewport > .column > .warp > .quarter > .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.viewport > .column > .warp > .quarter > .inner h4 {
+  /* margin-bottom: 0.15rem; */
+  font-size: 0.2rem;
+  color: #fff;
+  font-weight: normal;
+}
+.viewport > .column > .warp > .quarter > .inner span {
+  display: block;
+  color: #4cfde2;
+  font-size: 0.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.viewport > .column > .warp > .quarter > .inner span > .line {
+  display: inline-block;
+  border-radius: 5px;
+  width: 4px;
+  height: 10px;
+  background-color: #2d6af6;
+  margin-right: 2px;
+}
+.viewport > .column > .warp > .quarter > .inner > h3 {
+  font-size: 0.25rem;
+  text-align: center;
+  line-height: 0.9rem;
+}
+.viewport > .column > .warp > .quarter > .inner > .quarteritem {
+  display: flex;
+}
+.viewport > .column > .plan {
+  height: 1.9rem;
+}
+.viewport > .column > .plan > .inner > h3 {
+  font-size: 0.2rem;
+  color: white;
+}
+.viewport > .column > .plan > .inner > .chart {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.125rem;
+  /* 水球图 */
+}
+.viewport > .column > .plan > .inner > .chart > .water {
+  width: 2.5rem;
+  height: 1.75rem;
+}
+.viewport > .column > .plan > .inner > .chart > .data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.4rem;
+  height: 1.75rem;
+  padding: 0.2rem 0.3rem;
+  box-sizing: border-box;
+  background-image: url(../img/rect.png);
+  background-size: cover;
+}
+.viewport > .column > .plan > .inner > .chart > .data > .item > h4 {
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: white;
+}
+.viewport > .column > .plan > .inner > .chart > .data > .item > span {
+  display: block;
+  color: #4cfde2;
+  font-size: 0.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.viewport > .column > .plan > .inner > .chart > .data > .item > span > .line {
+  display: inline-block;
+  border-radius: 5px;
+  width: 4px;
+  height: 10px;
+  background-color: #2d6af6;
+  margin-right: 2px;
 }
 .viewport > .column:nth-of-type(2) {
   flex: 4;

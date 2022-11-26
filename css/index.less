@@ -38,7 +38,7 @@ ul {
     left: -1.65rem;
     right: -0.475rem;
     bottom: -0.25rem;
-    padding: 0.3rem 0.3rem 0.7rem;
+    padding: 0.3rem 0.3rem 0.6rem;
 }
 
 .panel h3 {
@@ -360,6 +360,289 @@ ul {
                     }
                 }
             }
+        }
+
+        /* 订单 */
+        >.order {
+            height: 0.7rem;
+
+            >.inner {
+                h4 {
+                    /* margin-bottom: 0.15rem; */
+                    font-size: 0.25rem;
+                    color: #fff;
+                }
+
+                span {
+                    display: block;
+                    color: #4cfde2;
+                    font-size: 0.175rem;
+
+                    >.line {
+                        display: inline-block;
+                        border-radius: 5px;
+                        width: 4px;
+                        height: 10px;
+                        background-color: #2d6af6;
+                        margin-right: 2px;
+                    }
+                }
+
+                >.days {
+                    display: flex;
+
+
+                    >a {
+                        display: block;
+                        font-size: 0.2rem;
+                        padding-right: 0.225rem;
+                        padding-left: 0.225rem;
+                        line-height: 1;
+                        color: #1950c4;
+                        border-right: 0.025rem solid #00f2f1;
+
+                    }
+
+                    .active {
+                        color: #fff;
+                        font-size: 0.225rem;
+                    }
+
+                    >a:nth-of-type(4) {
+                        border-right: none;
+                        padding-right: 0;
+                    }
+
+                    >a:nth-of-type(1) {
+                        padding-left: 0;
+                    }
+                }
+
+                >.orderdatas {
+                    // display: flex;
+
+                    >div {
+                        flex: 1;
+                        margin-top: 0.125rem;
+                    }
+                }
+
+                .data {
+                    display: flex;
+
+                }
+
+                .datanone {
+                    display: none !important;
+                }
+            }
+        }
+
+        /* 销售 */
+        >.sell {
+            height: 1.8rem;
+
+            position: relative;
+
+            >.inner {
+
+
+                h4 {
+                    /* margin-bottom: 0.15rem; */
+                    font-size: 0.25rem;
+                    color: #fff;
+                    padding-right: 0.225rem;
+                    border-right: 0.025rem solid #00f2f1;
+                }
+
+                >.selltotal {
+                    display: flex;
+                    line-height: 1;
+
+                    >a {
+                        padding: 0.05rem;
+                        font-size: 0.175rem;
+                        color: #0bace6;
+                        margin-left: .125rem;
+                        border-radius: .0375rem;
+                    }
+
+                    .ac {
+                        background-color: #4c9bfd;
+                        color: #fff;
+                    }
+                }
+
+                /* 单位 */
+                >.unit {
+                    position: absolute;
+                    top: .775rem;
+                    left: .675rem;
+                    font-size: .15rem;
+                    color: #0bace6;
+                }
+
+                /* 销售折线图 */
+                >.sline {
+                    width: 100%;
+                    height: 100%;
+                    margin-top: .0625rem;
+                    // background-color: #db4e3f;
+                }
+            }
+        }
+
+        /* 渠道 季度 */
+        >.warp {
+            display: flex;
+            width: 100%;
+            height: 2.6rem;
+
+            /* 渠道 */
+            >.channel {
+                >.inner {
+
+
+                    >h3 {
+                        font-size: .2rem;
+
+                    }
+
+                    >.data {
+                        width: 100%;
+
+
+
+                        >.radar {
+                            width: 100%;
+                            height: 1.6rem;
+                            // background-color: salmon;
+                        }
+                    }
+                }
+
+            }
+
+            /* 季度 */
+            >.quarter {
+                width: 30%;
+                margin-left: 10px;
+
+
+                >.inner {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h4 {
+                        /* margin-bottom: 0.15rem; */
+                        font-size: .2rem;
+                        color: #fff;
+                        font-weight: normal;
+                    }
+
+                    span {
+
+                        display: block;
+                        color: #4cfde2;
+                        font-size: .15rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                        >.line {
+                            display: inline-block;
+                            border-radius: 5px;
+                            width: 4px;
+                            height: 10px;
+                            background-color: #2d6af6;
+                            margin-right: 2px;
+                        }
+                    }
+
+                    >h3 {
+
+                        font-size: .25rem;
+                        text-align: center;
+                        line-height: 0.9rem;
+
+                    }
+
+                    >.quarteritem {
+                        display: flex;
+
+                    }
+                }
+            }
+
+
+        }
+
+        /* 排行 */
+        >.plan {
+            height: 1.9rem;
+
+            >.inner {
+                >h3 {
+                    font-size: .2rem;
+                    color: white;
+                }
+
+                >.chart {
+                    display: flex;
+                    justify-content: space-between;
+
+                    margin-top: 0.125rem;
+                    /* 水球图 */
+
+                    >.water {
+                        width: 2.5rem;
+                        height: 1.75rem;
+                        // background-color: salmon;
+                    }
+
+                    >.data {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 1.4rem;
+                        height: 1.75rem;
+                        padding: 0.2rem 0.3rem;
+                        box-sizing: border-box;
+                        background-image: url(../img/rect.png);
+                        background-size: cover;
+
+                        >.item {
+                            >h4 {
+                                font-size: .2rem;
+                                font-weight: bold;
+                                color: white;
+                            }
+
+                            >span {
+
+                                display: block;
+                                color: #4cfde2;
+                                font-size: .15rem;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+
+                                >.line {
+                                    display: inline-block;
+                                    border-radius: 5px;
+                                    width: 4px;
+                                    height: 10px;
+                                    background-color: #2d6af6;
+                                    margin-right: 2px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
         }
     }
 
